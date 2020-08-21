@@ -2,13 +2,13 @@
 
 # load library
 #library(covid19.analytics)
-source("../testing.R")
+source("./testing.R")
 
 # read data latest data
 data <- covid19.data()
 
 # save data...
-write.csv(data,file=paste0("covid19_data-",Sys.Date(),".cvs"))
+write.csv(data,file=paste0("covid19_data-",Sys.Date(),".csv"))
 
 # static and interactive plot 
 TS.data <- covid19.data("ts-ALL")
